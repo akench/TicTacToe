@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicTacToe Classic</string>
+    <string name="title_activity_game_type">GameTypeActivity</string>
+    <string name="title_activity_game_mode">GameModeActivity</string>
+    <string name="title_activity_single_player_settings">SinglePlayerSettingsActivity</string>
+    <string name="title_activity_multiplayer_settings">MultiplayerSettingsActivity</string>
+    <string name="title_activity_classic_game">ClassicGameActivity</string>
+    <string name="title_activity_game_setup">GameSetupActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.theflyingostrich.game.tictactoe.SettingsActivity">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundSwitch"
+        android:text="Sound: ON  "
+        android:checked="true"
+        android:textSize="30dp"
+        android:switchMinWidth="50dp"
+        android:trackTint="@color/colorPrimary"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:layout_above="@+id/musicSwitch"
+        android:layout_alignRight="@+id/musicSwitch"
+        android:layout_alignEnd="@+id/musicSwitch"
+        android:layout_marginBottom="119dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicSwitch"
+        android:text="Music: ON  "
+        android:checked="true"
+        android:textSize="30dp"
+        android:switchMinWidth="50dp"
+        android:trackTint="@color/colorPrimary"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

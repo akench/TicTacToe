@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.theflyingostrich.game.tictactoe.MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/logoView"
+        android:src="@drawable/icon_orange_rounded"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+
+    <ImageButton
+        android:id="@+id/singleplayer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one_person"
+        android:onClick="startGameSetupActivity"
+        android:background="@color/background"
+        android:layout_alignTop="@+id/multiplayer_button"
+        android:layout_alignLeft="@+id/logoView"
+        android:layout_alignStart="@+id/logoView"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
+
+    <ImageButton
+        android:id="@+id/multiplayer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/two_person"
+        android:onClick="startGameSetupActivity"
+        android:background="@color/background"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gear_ic"
+        android:background="@color/background"
+        android:onClick="startSettingsActivity"
+        android:id="@+id/imageButton"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_below="@+id/logoView"
+        android:layout_alignRight="@+id/logoView"
+        android:layout_alignEnd="@+id/logoView" />
+
+
+</RelativeLayout>
+

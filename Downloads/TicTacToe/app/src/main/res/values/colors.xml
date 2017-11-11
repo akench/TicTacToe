@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#8585d4</color>
+    <color name="red">#990000</color>
+    <color name="lightBlue">#82b3ec</color>
+    <color name="green">#1CA506</color>
+    <color name="darkPrimary">#1976D2</color>
+    <color name="primary">#2196F3</color>
+    <color name="lightPrimary">#BBDEFB</color>
+    <color name="accent">#4CAF50</color>
+    <color name="secondary">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="background">#FFAA29</color>
+    <color name="playButtonColor">#197D16</color>
+</resources>

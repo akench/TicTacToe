@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one_person"
+        android:layout_marginTop="25dp"
+        android:id="@+id/playerOneImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/easyTextView"
+        android:layout_alignEnd="@+id/easyTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/playerOneImage"
+        android:layout_alignLeft="@+id/difficultyNumTextView"
+        android:layout_alignStart="@+id/difficultyNumTextView"
+        android:id="@+id/vsText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one_person"
+        android:visibility="invisible"
+        android:id="@+id/playerTwoImage"
+        android:layout_alignBottom="@+id/vsText"
+        android:layout_toRightOf="@+id/playButton"
+        android:layout_toEndOf="@+id/playButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:visibility="invisible"
+        android:id="@+id/phoneImage"
+        android:layout_alignTop="@+id/playerTwoImage"
+        android:layout_alignLeft="@+id/playerTwoImage"
+        android:layout_alignStart="@+id/playerTwoImage" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="CPU Level"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/difficultyTextView"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pointsToWinSeekBar"
+        android:max="2"
+        android:background="@color/lightBlue"
+        android:thumbTint="@color/primary"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/OnePointTextView"
+        android:gravity="center"
+        android:layout_below="@+id/pointsToWinSeekBar"
+        android:layout_alignLeft="@+id/pointsToWinSeekBar"
+        android:layout_alignStart="@+id/pointsToWinSeekBar"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/TwoPointTextView"
+        android:gravity="center"
+        android:layout_alignTop="@+id/OnePointTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/ThreePointTextView"
+        android:gravity="center"
+        android:layout_alignTop="@+id/TwoPointTextView"
+        android:layout_alignRight="@+id/pointsToWinSeekBar"
+        android:layout_alignEnd="@+id/pointsToWinSeekBar"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Points to Win Game"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/playerOneImage"
+        android:layout_alignLeft="@+id/difficultyTextView"
+        android:layout_alignStart="@+id/difficultyTextView" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:id="@+id/playButton"
+        android:src="@drawable/play_ic"
+        android:onClick="clickPlay"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/difficultyNumTextView"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficultySeekBar"
+        android:max="10"
+        android:background="@color/lightBlue"
+        android:thumbTint="@color/primary"
+        android:layout_below="@+id/difficultyTextView"
+        android:layout_alignLeft="@+id/difficultyTextView"
+        android:layout_alignStart="@+id/difficultyTextView"
+        android:layout_alignRight="@+id/difficultyTextView"
+        android:layout_alignEnd="@+id/difficultyTextView" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Easy"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/easyTextView"
+        android:textSize="25dp"
+        android:layout_below="@+id/difficultySeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Hard"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/hardTextView"
+        android:textSize="25dp"
+        android:layout_below="@+id/difficultySeekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/difficultyNumTextView"
+        android:layout_below="@+id/difficultySeekBar"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
